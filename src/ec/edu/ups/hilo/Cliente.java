@@ -19,9 +19,9 @@ public class Cliente {
     public void entrarABanco() {
         int posFilaLibra=fila.posicionDeFilaLibre();
         if(posFilaLibra==-1){
-            System.out.println("no habia espacio en la fila");
+            //System.out.println("no habia espacio en la fila");
         }else{
-          System.out.println("Espera en la fila #"+posFilaLibra);  
+          //System.out.println("Espera en la fila #"+posFilaLibra);  
         }
         
     }

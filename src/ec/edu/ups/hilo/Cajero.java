@@ -101,12 +101,12 @@ public class Cajero implements Runnable {
                     if(c1<interfaz.getCajero1().getLocation().x){
                         interfaz.getCliente1().setLocation(interfaz.getCliente1().getLocation().x+10,interfaz.getCliente1().getLocation().y );
                     }*/
-                    //System.out.println("el cajero " + id + " esta ocupado por el cliente #:" + posClienteSinAtender + " esta depositando " + monto);
+                    System.out.println("el cajero " + id + " esta ocupado por el cliente #:" + posClienteSinAtender + " esta depositando " + monto);
                     modeloLista.addElement("el cajero " + id + " esta ocupado por el cliente #:" + posClienteSinAtender + " esta depositando " + monto);
                     listaInterfaz.setModel(modeloLista);
                     esperar(3);
                     fila.salirDeFila(posClienteSinAtender);
-                    //System.out.println("el cajero " + id + " esta desocupado");
+                    System.out.println("el cajero " + id + " esta desocupado");
 
                     //mensajeSalir(id);
                     modeloLista.addElement("el cajero " + id + " esta desocupado");
@@ -126,13 +126,13 @@ public class Cajero implements Runnable {
                             break;
                     }
                     //mensajeIngresar(id, posClienteSinAtender, monto, opcion);
-                    //System.out.println("el cajero " + id + " esta ocupado por el cliente #:" + posClienteSinAtender + " esta retirando " + monto);
+                    System.out.println("el cajero " + id + " esta ocupado por el cliente #:" + posClienteSinAtender + " esta retirando " + monto);
                     modeloLista.addElement("el cajero " + id + " esta ocupado por el cliente #:" + posClienteSinAtender + " esta retirando " + monto);
                     listaInterfaz.setModel(modeloLista);
                     esperar(3);
                     fila.salirDeFila(posClienteSinAtender);
                     //mensajeSalir(id);
-                    //System.out.println("el cajero " + id + " esta desocupado");
+                    System.out.println("el cajero " + id + " esta desocupado");
                     modeloLista.addElement("el cajero " + id + " esta desocupado");
                     listaInterfaz.setModel(modeloLista);
                 }
