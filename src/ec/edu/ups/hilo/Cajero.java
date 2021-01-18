@@ -6,7 +6,6 @@
 package ec.edu.ups.hilo;
 
 import ec.edu.ups.test.Interfaz;
-import ec.edu.ups.test.Test;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
